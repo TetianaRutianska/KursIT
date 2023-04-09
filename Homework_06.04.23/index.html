@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс валют</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <h1>Курсы обмена валют</h1>
+
+    <div class="Currencies_list">
+        <h2>Список валют</h2>
+        <ul>
+            <li> € (EUR) страны Евросоюза </li>
+            <li> $ (USD) США </li>
+            <li> £ (GBP) Великобритания</li>
+            <li> zł (PLN) Польша</li>
+            <li> ₴ (UAH) Украина</li>
+        </ul>
+    </div>
+
+    <div class="Table-currencies-today">
+        <table> <!-- Обертка таблицы  -->
+            <caption> <!-- Заголовок таблицы  -->
+                КУРСЫ ВАЛЮТ НА СЕГОДНЯ
+            </caption>
+            <thead> <!-- Шапка таблицы  -->
+                <tr>
+                    <th scope="col">Флаг</th>
+                    <!--  Атрибут scope определяет ячейки th, к которым относится заголовок (определенный в элементе). Значение col -заголовок относится ко всем ячейкам столбца, к которому он принадлежит -->
+                    <th scope="col">Валюта</th>
+                    <th scope="col">Курс</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- Тело таблицы  -->
+                <tr> <!-- тег строки (ряда) таблицы  -->
+                    <td> <!-- тег обычной ячейки таблицы  -->
+                        <img src="./images/usa-circular.png" alt="">
+                        <img src="./images/european-union-circular-flag.png" alt="">
+                    </td>
+                    <td>$ (USD)/€ (EUR)</td>
+                    <td>0,93€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./images/great-britain-circular.png" alt="">
+                        <img src="./images/european-union-circular-flag.png" alt="">
+                    </td>
+                    <td>£ (GBP)/€ (EUR)</td>
+                    <td>1,17€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./images/poland-circular.png" alt="">
+                        <img src="./images/european-union-circular-flag.png" alt="">
+                    </td>
+                    <td>zł (PLN)/€ (EUR)</td>
+                    <td>0,21€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./images/ukraine-circular.png" alt="">
+                        <img src="./images/european-union-circular-flag.png" alt="">
+                    </td>
+                    <td>₴ (UAH)/€ (EUR)</td>
+                    <td>0,025€</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
